@@ -814,7 +814,7 @@
 
         var appliedPattern = "temp";
         var iterCount = 0;
-        var fsmCache = new noam.util.HashTable();
+        var fsmCache = {}; // new noam.util.HashTable();
 
         while (appliedPattern !== null && (opts.numIterations === null || iterCount < opts.numIterations)) {
           appliedPattern = _simplify_iteration(treeClone, fsmCache, opts.useFsmPatterns);

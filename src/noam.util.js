@@ -1,4 +1,4 @@
-  var noam = {};
+  noam = {};
 
   noam.util = {};
 
